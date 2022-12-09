@@ -3,7 +3,7 @@ import styled from 'styled-components/macro';
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  background: url(${({ src }) => src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'}) top left/cover no-repeat;
+  background: url(${({ src }) => src ? `../images/misc/${src}.jpg` : '../images/misc/header_bg.jpg'}) top left / cover no-repeat;
 `;
 
 export const Frame = styled.div`
@@ -28,8 +28,8 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 62px;
-  width: 80px;
+  height: 55px;
+  width: 85px;
   margin-left: 10px;
 
   @media (min-width: 1449px) {

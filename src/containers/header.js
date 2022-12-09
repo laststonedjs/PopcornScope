@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../components";
 import * as ROUTES from "../constants/routes";
-import logo from "../constants/images/header_logo.png";
+import logo from "../constants/images/header/header_logo.png";
 
 const HeaderContainer = ({ children }) => {
   return (
