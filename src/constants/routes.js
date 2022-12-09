@@ -1,2 +1,3 @@
 export const HOME = '/';
-export const BROWSE = '/browse';
+export const MOVIES = '/movies';
+export const SHOWS = '/shows';
