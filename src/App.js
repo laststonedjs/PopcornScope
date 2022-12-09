@@ -1,12 +1,18 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Home, Browse } from './pages';
+import { Home, Movies, Shows } from './pages';
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/browse" element={<Browse />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+
+        <Route path="movies" element={<Movies />}></Route>
+        <Route path="/shows" element={<Shows />}></Route>
+
+        {/* <Route path="/browse" element={<Browse />} /> */}
+      </Routes >
+    </div>
   );
 }

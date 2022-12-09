@@ -1,12 +1,13 @@
 import React from "react";
+import { BrowseContainer } from "../containers/browse/browse";
 import HeaderContainer from "../containers/header";
-import { JumbotronContainer } from '../containers/jumbotron';
 
 export default function Home() {
+
   return (
     <>
       <HeaderContainer>
-        {/* <JumbotronContainer /> */}
+        <BrowseContainer />
       </HeaderContainer>
     </>
   );
