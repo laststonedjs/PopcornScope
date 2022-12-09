@@ -67,8 +67,11 @@ const breatheAnimation = keyframes`
     text-shadow: 0 0 2px #e6b800, 0 0 2px #e6b800, 0 0 2px #ffff66, 0 0 1px #ffff66, 0 0 1px #ffff66, 1px 1px 2px #e6eeff;
     color: #e6b800;
   }
-  
-  50% {
+  70% {
+    text-shadow: 0 0 2px #ffb399, 0 0 2px #ffb399, 0 0 2px #cccc00, 0 0 2px #cccc00, 0 0 1.5px #b3b300, 1px 1px 1.5px #ff4d4d;
+    color: #ffb399;
+  }
+  30% {
     text-shadow: 0 0 2px #ffb399, 0 0 2px #ffb399, 0 0 2px #cccc00, 0 0 2px #cccc00, 0 0 1.5px #b3b300, 1px 1px 1.5px #ff4d4d;
     color: #ffb399;
   }
@@ -106,15 +109,35 @@ export const Link = styled.p`
   }
 `;
 
+const slideIn = keyframes`
+   from {
+    margin-left: 70%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+`;
+
 export const FeatureCallOut = styled.h2`
-  background: linear-gradient(#ffff00, #e60000);
+  background: linear-gradient(#000000, #330000) opacity 0.6;
   font-size: 32px;
+  color: #ff4d00;
   line-height: normal;
   letter-spacing: 0.6px;
   font-style: normal;
   border-radius: 1px;
   padding: 2px 0 1px 12px;
   margin: 10px 0 20px 0;
+  text-align: center;
+  text-shadow: 1px 1px 5px crimson;
+  position: relative;
+  animation-name: ${slideIn};
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 `;
 
 export const Search = styled.div`

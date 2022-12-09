@@ -22,7 +22,9 @@ export function BrowseContainer() {
       </Header.Frame>
       <Header src="suspiria_img" dontShowOnSmallScreen>
         <Header.Feature>
-          <Header.FeatureCallOut>Watch Suspiria Now</Header.FeatureCallOut>
+          <Header.FeatureCallOut>
+            Watch "Suspiria" - Dario Argento
+          </Header.FeatureCallOut>
           <Header.Text>
             A young American dancer travels to Europe to join a famous ballet school.
             As she arrives, the camera turns to another young woman, who appears to be fleeing from the school.
