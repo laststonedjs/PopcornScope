@@ -1,12 +1,12 @@
 .media {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 323px;
   padding: 5px;
   margin: 5px 0;
   color: #e6b800;
   background: linear-gradient(#000000, #330000);
-  border-radius: 10px;
+  border-radius: 8px solid #fff;
   position: relative;
 }
 
@@ -37,4 +37,9 @@
   justify-content: space-between;
   padding-bottom: 3px;
   padding: 0 2px;
+}
+
+.badge {
+  margin-right: 6px;
+  border: 1px solid #000000;
 }

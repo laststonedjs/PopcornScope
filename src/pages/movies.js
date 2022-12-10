@@ -13,7 +13,7 @@ export default function Movies() {
       <HeaderContainer>
         <Header.Frame>
           <Header.Group>
-            <Link className='links' to="movies">Movies</Link>
+            <Header.TextLink>Movies</Header.TextLink>
             <Link className='links' to="shows">TV Shows</Link>
           </Header.Group>
           <Header.Group>
