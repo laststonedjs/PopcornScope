@@ -79,9 +79,9 @@ const breatheAnimation = keyframes`
 
 export const Text = styled.p`
   color: #e6b800;
-  font-size: 18px;
+  font-size: 22px;
   line-height: normal;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.6px;
   font-style: normal;
   border: none;
   outline: none;
@@ -93,7 +93,8 @@ export const Text = styled.p`
 `;
 
 export const Link = styled.p`
-  color: white;
+  color: #FF3366;
+  font-size: 22px;
   text-decoration: none;
   margin-right: 20px;
   font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
@@ -101,12 +102,9 @@ export const Link = styled.p`
 
   &:hover {
     font-weight: bold;
-    color: #e6b800;
+    color: white;
   }
 
-  &::last-of-type {
-    margin-right: 0;
-  }
 `;
 
 const slideIn = keyframes`
@@ -136,8 +134,7 @@ export const FeatureCallOut = styled.h2`
   text-shadow: 1px 1px 5px crimson;
   position: relative;
   animation-name: ${slideIn};
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-duration: 2s;
 `;
 
 export const Search = styled.div`

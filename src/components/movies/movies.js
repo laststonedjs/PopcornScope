@@ -27,7 +27,7 @@ export default function MovieContainer() {
           id={c.id}
           poster={c.poster_path}
           title={c.title}
-          data={c.first_air_date}
+          release_date={c.release_date}
           vote_average={c.vote_average}
           vote_count={c.vote_count}
         />
