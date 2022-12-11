@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// components
 import { Header } from '../../components';
+// syles
 import './browse.css';
 
 export function BrowseContainer() {
@@ -10,14 +12,14 @@ export function BrowseContainer() {
     <>
       <Header.Frame>
         <Header.Group>
-          <Link className='links' to="movies">Movies</Link>
-          <Link className='links' to="/movies/shows">TV Shows</Link>
+          <Link className='link' to="movies">Movies</Link>
+          <Link className='link' to="/movies/shows">TV Shows</Link>
         </Header.Group>
         <Header.Group>
-          <Header.Search
+          {/* <Header.Search
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
-          />
+          /> */}
         </Header.Group>
       </Header.Frame>
       <Header src="suspiria_img" dontShowOnSmallScreen>

@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Bahnschrift;
     -webkit-font-smooting: antialised;
     -moz-osx-font-smooting: grayscale;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1);
+    background: #ffffff;
     color: #0f0f0a;
     font-size: 16px;
     scroll-behavior: smooth;

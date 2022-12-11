@@ -1,6 +1,6 @@
-.links {
+.link {
   text-decoration: none;
-  color: #ff3366;
+  color: #e5e5e5;
   cursor: pointer;
   margin-right: 20px;
   margin-left: 12px;
@@ -9,18 +9,21 @@
   letter-spacing: 0.5px;
 }
 
-.links:hover {
-  color: white;
+.link:hover {
+  color: #ffcccc;
 }
 
-.current {
+.activeLink {
+  color: #ff6666;
   text-decoration: none;
-  color: white;
   cursor: pointer;
-  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 12px;
+  font-size: 24px;
+  margin-top: 1px;
   letter-spacing: 0.5px;
 }
 
-.current:hover {
-  color: #ff3366;
+.searchLink {
+  margin-left: 50px;
 }

@@ -8,7 +8,7 @@ export default function MovieContainer() {
 
   const fetchMovies = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=4787c12f121422364a0dba37d88bc117&language=en-US&page=1`
+      `https://api.themoviedb.org/3/discover/movie?api_key=4787c12f121422364a0dba37d88bc117&language=en-US&sort_by=popularity.desc&include_video=true&page=1&with_watch_monetization_types=flatrate`
     );
 
     console.log(data.results);
@@ -20,18 +20,22 @@ export default function MovieContainer() {
   }, [])
 
   return (
-    <div className='top-rated-movies'>
-      {content && content.map((c) => (
-        <SingleContent
-          key={c.id}
-          id={c.id}
-          poster={c.poster_path}
-          title={c.title}
-          date={c.release_date}
-          vote_average={c.vote_average}
-          popularity={c.popularity}
-        />
-      ))}
+    <div className='movie-wrapper'>
+      <span className="page-title">Top Rated Movies</span>
+      <div className='top-rated-movies'>
+        {content && content.map((c) => (
+          <SingleContent
+            key={c.id}
+            id={c.id}
+            poster={c.poster_path}
+            title={c.title || c.name}
+            overview={c.overview}
+            date={c.release_date || c.first_air_date}
+            vote_average={c.vote_average}
+            media_type="movie"
+          />
+        ))}
+      </div>
     </div>
   );
 }

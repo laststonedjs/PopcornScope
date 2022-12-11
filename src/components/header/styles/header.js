@@ -5,6 +5,9 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) => src ? `../images/misc/${src}.jpg` : '../images/misc/header_bg.jpg'}) top left / cover no-repeat;
+  box-shadow: 0px 1px 8px black;
+  padding-bottom: 15px;
+  z-index: 100;
 
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallScreen }) => dontShowOnSmallScreen && `background: none;`}}
@@ -12,13 +15,13 @@ export const Background = styled.div`
 `;
 
 export const Frame = styled.div`
-  
+  position: relative;
 `;
 
 export const Group = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 3px;
 `;
 
 export const Container = styled.div`
@@ -78,6 +81,7 @@ const breatheAnimation = keyframes`
 `;
 
 export const Text = styled.p`
+  text-decoration: none;
   color: #e6b800;
   font-size: 22px;
   line-height: normal;
@@ -93,7 +97,7 @@ export const Text = styled.p`
 `;
 
 export const Link = styled.p`
-  color: #FF3366;
+  color: white;
   font-size: 22px;
   text-decoration: none;
   margin-right: 20px;
@@ -101,10 +105,8 @@ export const Link = styled.p`
   cursor: pointer;
 
   &:hover {
-    font-weight: bold;
-    color: white;
+    color: red;
   }
-
 `;
 
 const slideIn = keyframes`
@@ -162,6 +164,12 @@ export const SearchIcon = styled.button`
   }
 `;
 
+export const SearchLogo = styled.img`
+  height: 60px;
+  width: 60px;
+  
+`;
+
 export const PlayButton = styled.button`
   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
   background-color: #ebebeb;
@@ -193,4 +201,16 @@ export const SearchInput = styled.input`
  padding: ${({ active }) => (active === true ? '0 15px' : '0')};
  opacity: ${({ active }) => (active === true ? '1' : '0')};
  width: ${({ active }) => (active === true ? '300px' : '0px')};
+`;
+
+export const Bounce = styled.div`
+        width: 30px;
+        height: 30px;
+        transition: scale 1.5s;
+        cursor: pointer;
+        padding-bottom: 12px;
+
+        &:hover {
+          scale: 1.2;
+        }      
 `;

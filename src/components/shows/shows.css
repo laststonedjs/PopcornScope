@@ -1,5 +1,12 @@
+.shows-wrapper {
+  background: linear-gradient(to top right, #ccffff 0%, #66ffff 100%);
+}
+
 .top-rated-shows {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 30px;
 }
