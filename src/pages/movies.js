@@ -13,7 +13,7 @@ export default function Movies() {
       <HeaderContainer>
         <Header.Frame>
           <Header.Group>
-            <Header.TextLink>Movies</Header.TextLink>
+            <Link className='current' to="/movies">Movies</Link>
             <Link className='links' to="shows">TV Shows</Link>
           </Header.Group>
           <Header.Group>

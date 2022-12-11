@@ -11,7 +11,7 @@ export function BrowseContainer() {
       <Header.Frame>
         <Header.Group>
           <Link className='links' to="movies">Movies</Link>
-          <Link className='links' to="shows">TV Shows</Link>
+          <Link className='links' to="/movies/shows">TV Shows</Link>
         </Header.Group>
         <Header.Group>
           <Header.Search

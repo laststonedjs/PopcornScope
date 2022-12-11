@@ -9,7 +9,7 @@ export default function App() {
 
 
         <Route path="movies" element={<Movies />}></Route>
-        <Route path="/shows" element={<Shows />}></Route>
+        <Route path="/movies/shows" element={<Shows />}></Route>
         <Route path="/" element={<Home />}></Route>
 
         {/* <Route path="/browse" element={<Browse />} /> */}
