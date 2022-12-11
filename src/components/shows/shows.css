@@ -1,0 +1,5 @@
+.top-rated-shows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

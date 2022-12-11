@@ -7,8 +7,8 @@ const SingleContent = ({
   id,
   poster,
   title,
-  release_date,
-  vote_count,
+  date,
+  popularity,
   vote_average
 }) => {
   return (
@@ -25,8 +25,8 @@ const SingleContent = ({
       />
       <b className='title'>{title}</b>
       <span className='subTitle'>
-        {vote_count}
-        <span className='subTitle'>{release_date}</span>
+        {popularity}
+        <span className='subTitle'>{date}</span>
       </span>
     </div>
   );
