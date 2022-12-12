@@ -1,11 +1,18 @@
+.wrapper {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
 .card_container {
   display: flex;
-  flex-direction: column;
-  width: 300px;
+  min-width: 28rem;
   padding: 5px;
   margin: 5px 0;
-  color: #e6e6e6;
-  background-color: #0a4b8b;
+  color: #737373;
+  background: linear-gradient(to top, #e0ebeb 0%, #b7dbff 100%);
   border-radius: 10px;
   position: relative;
   transition: all 0.4s;
@@ -16,21 +23,32 @@
 
 .card_container:hover {
   background-color: #ccffff;
-  color: #0a4b8b;
+  color: #074481;
   transform: scale(1.02);
   box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
   transition: all 0.4s;
 }
 
+@media screen and (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
+  }
+  .card_container {
+    flex-direction: column;
+    text-align: center;
+    min-width: 14rem;
+  }
+}
+
 @media (max-width: 550px) {
-  .media {
-    width: 46%;
+  .card_container {
+    width: 50%;
   }
 }
 
 .poster {
   border-radius: 10px;
-  height: 350px;
+  height: 325px;
   width: 100%;
 }
 
@@ -45,4 +63,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 2px 6px 5px;
+}
+
+.mediaType {
+  padding: 2px 0 5px 5px;
+  background-color: #e5e5e5;
 }

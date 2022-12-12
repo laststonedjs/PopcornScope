@@ -50,5 +50,5 @@ export const SearchInput = styled.input`
  margin-left: ${({ active }) => (active === true ? '10px' : '0')};
  padding: ${({ active }) => (active === true ? '0 15px' : '0')};
  opacity: ${({ active }) => (active === true ? '1' : '0')};
- width: ${({ active }) => (active === true ? '330px' : '0px')};
+ width: ${({ active }) => (active === true ? '420px' : '0px')};
 `;

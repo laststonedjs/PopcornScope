@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 // components
 import ShowsContainer from '../components/shows/shows';
@@ -10,7 +10,6 @@ import '../containers/browse/browse.css';
 import SearchContainer from '../containers/search';
 
 export default function Shows() {
-  const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <div>

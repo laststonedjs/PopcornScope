@@ -11,7 +11,6 @@ import SearchContainer from '../containers/search';
 import '../containers/browse/browse.css';
 
 export default function Movies() {
-  const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <div>
@@ -24,10 +23,6 @@ export default function Movies() {
           <Header.Group>
             <SearchContainer>
             </SearchContainer>
-            {/* <HeaderSearch
-              searchTerm={searchTerm}
-              setSearchTerm={setSearchTerm}>
-            </HeaderSearch> */}
           </Header.Group>
         </Header.Frame>
       </HeaderContainer>
