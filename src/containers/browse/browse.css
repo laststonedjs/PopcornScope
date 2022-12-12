@@ -24,6 +24,14 @@
   letter-spacing: 0.5px;
 }
 
-.searchLink {
-  margin-left: 50px;
+.activeSearch {
+  margin-left: 29%;
+  margin-top: 2%;
+  padding: 5px 0 7px 0;
+}
+
+.tabContainer {
+  margin-top: 2.5%;
+  margin-left: 23%;
+  padding: 8px 0 5px 0;
 }

@@ -5,10 +5,12 @@ import './movies.css';
 
 export default function MovieContainer() {
   const [content, setContent] = useState([]);
+  let n = 10;
 
   const fetchMovies = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/discover/movie?api_key=4787c12f121422364a0dba37d88bc117&language=en-US&sort_by=popularity.desc&include_video=true&page=1&with_watch_monetization_types=flatrate`
+      `https://api.themoviedb.org/3/discover/movie?api_key=4787c12f121422364a0dba37d88bc117&language=en-US&
+      sort_by=vote_average.desc&include_video=true&page=1&vote_average.lte=10&with_genres=true`
     );
 
     console.log(data.results);
@@ -16,6 +18,7 @@ export default function MovieContainer() {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line
     fetchMovies();
   }, [])
 
@@ -23,7 +26,7 @@ export default function MovieContainer() {
     <div className='movie-wrapper'>
       <span className="page-title">Top Rated Movies</span>
       <div className='top-rated-movies'>
-        {content && content.map((c) => (
+        {content && content.slice(0, n).map((c) => (
           <SingleContent
             key={c.id}
             id={c.id}

@@ -35,21 +35,23 @@ const SingleContent = ({
   // }
 
   return (
-    <div className='card_container'>
-      <Badge
-        className='badge'
-        badgeContent={vote_average}
-        color={vote_average > 6 ? 'secondary' : 'primary'}
-      />
-      <div className='card'>
-        <img
-          className='poster'
-          src={poster ? `${img_300}/${poster}` : unavailable}
-          alt={title}
+    <div className='wrapper'>
+      <div className='card_container'>
+        <Badge
+          className='badge'
+          badgeContent={vote_average}
+          color={vote_average > 6 ? 'secondary' : 'primary'}
         />
-        <h1 className='title'>{title}</h1>
-        {/* <span className='subTitle'>{release_date}</span> */}
-        <span className='subTitle'><b>Release Date</b> {date}</span>
+        <div className='card'>
+          <img
+            className='poster'
+            src={poster ? `${img_300}/${poster}` : unavailable}
+            alt={title}
+          />
+          <h1 className='title'>{title}</h1>
+          <span className='mediaType'>{media_type === "tv" ? "TV Series" : "Movie"}</span>
+          <span className='subTitle'><b>Release Date</b> {date}</span>
+        </div>
       </div>
     </div>
   );

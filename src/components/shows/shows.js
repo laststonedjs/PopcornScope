@@ -7,6 +7,7 @@ import './shows.css';
 
 const ShowsContainer = () => {
   const [content, setContent] = useState([]);
+  let n = 10;
 
   const fetchShows = async () => {
     const { data } = await axios.get(
@@ -18,6 +19,7 @@ const ShowsContainer = () => {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line
     fetchShows();
   }, []);
 
@@ -25,7 +27,7 @@ const ShowsContainer = () => {
     <div className='shows-wrapper'>
       <span className="page-title">Top Rated TV Shows</span>
       <div className='top-rated-shows'>
-        {content && content.map((c) => (
+        {content && content.slice(0, n).map((c) => (
           <SingleContent
             key={c.id}
             id={c.id}

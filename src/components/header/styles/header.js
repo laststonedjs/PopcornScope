@@ -1,10 +1,10 @@
 import styled, { keyframes } from 'styled-components/macro';
-
+import headerBg from '../../../constants/images/header/header_bg.jpg'
 
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  background: url(${({ src }) => src ? `../images/misc/${src}.jpg` : '../images/misc/header_bg.jpg'}) top left / cover no-repeat;
+  background: url(${headerBg}) top left / cover no-repeat;
   box-shadow: 0px 1px 8px black;
   padding-bottom: 15px;
   z-index: 100;
