@@ -1,7 +1,7 @@
 {
   "name": "popcornscope",
   "version": "0.1.0",
-  "homepage": "http://localhost:3000/movies",
+  "homepage": "http://localhost:3000/shows",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
