@@ -2,7 +2,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-After that it should open the 'Movies' page for you.
+After that it should open the 'TV Shows' page for you.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
