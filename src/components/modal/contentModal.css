@@ -12,12 +12,14 @@
 .tagline {
   padding-bottom: 10px;
   align-self: center;
+  color: black;
 }
 
 .contentModal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f2f2f2;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
@@ -29,19 +31,20 @@
 }
 
 .modalAbout {
-  padding: 10px;
+  padding: 5px;
   width: 95%;
   height: 90%;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: space-evenly;
   font-weight: 300;
 }
 
 .modalTitle {
-  height: 9%;
-  font-size: 10px;
+  height: 20%;
+  font-size: 3vw;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
