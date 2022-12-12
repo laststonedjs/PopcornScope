@@ -2,17 +2,12 @@ In the project directory, you can run:
 
 ### `npm start`
 
-After that it should open the 'Movies' page for you.
+After that it should open the 'TV Shows' page for you.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm test`
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
 **###########** Dependencies that I imported at the beginning of the project **############**
 
