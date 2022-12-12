@@ -18,8 +18,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 **###########** Dependencies that I imported at the beginning of the project **############**
 
 - npm add styled-components
-- npm add fuse.js (with Fuse we don’t need to setup a dedicated backend just to handle search - https://fusejs.io/)
 - npm install normalize.css
+- MovieDB API documentation (https://developers.themoviedb.org/)
+- Axios
+- react-router-dom v6
 - installed ESLint
 
 ## Learn More
