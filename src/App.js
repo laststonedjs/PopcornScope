@@ -7,13 +7,11 @@ export default function App() {
     <div>
       <Routes>
 
-
-        <Route path="movies" element={<Movies />}></Route>
+        <Route exact path="movies" element={<Movies />}></Route>
         <Route path="/movies/shows" element={<Shows />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/movies/shows/search" element={<Search />}></Route>
 
-        {/* <Route path="/browse" element={<Browse />} /> */}
       </Routes >
     </div>
   );

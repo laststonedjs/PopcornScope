@@ -8,14 +8,13 @@
 }
 
 .page-title {
-  text-transform: uppercase;
-  text-align: left;
-  margin-left: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
-  padding: 4px;
-  border-radius: 50px;
-  color: black;
+  position: relative;
+  top: 30px;
+  left: 55px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6vw;
+  padding: 10px;
+  color: #221f1f;
 }
 
 .movie-wrapper {

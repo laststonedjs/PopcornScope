@@ -5,6 +5,7 @@ import { img_300, unavailable } from '../../config/config';
 // import infos from '../../constants/infos.json';
 // styles
 import './singleContent.css';
+import ContentModal from '../modal/contentModal';
 
 const SingleContent = ({
   id,
@@ -16,27 +17,9 @@ const SingleContent = ({
   vote_average
 }) => {
 
-  // const cast = infos.map(actor => (
-  //   <p key={actor}>{actor}</p>
-  // ));
-
-  // const CardInfo = ({ name, value }) => (
-  //   <div className={`card_${name}`}>
-  //     <span className='info_head'>
-  //       {name.replace(/\b\w/g, l => l.toUpperCase())}
-  //     </span>
-  //     {value}
-  //   </div>
-  // );
-
-  // const getUrl = (poster) => {
-  //   let url = `/${poster}.jpg`;
-  //   return url;
-  // }
-
   return (
     <div className='wrapper'>
-      <div className='card_container'>
+      <ContentModal media_type={media_type} id={id}>
         <Badge
           className='badge'
           badgeContent={vote_average}
@@ -52,7 +35,7 @@ const SingleContent = ({
           <span className='mediaType'>{media_type === "tv" ? "TV Series" : "Movie"}</span>
           <span className='subTitle'><b>Release Date</b> {date}</span>
         </div>
-      </div>
+      </ContentModal>
     </div>
   );
 }

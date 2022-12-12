@@ -1,0 +1,91 @@
+.contentLandscape {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.contentPortrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.contentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.contentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.modalAbout {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.modalTitle {
+  height: 9%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalDescription {
+  display: flex;
+  height: 40%;
+  color: #404040;
+  background: linear-gradient(to top left, #cce6ff 0%, #b3b3ff 100%);
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin;
+  box-shadow: inset 1px 1px 5px #0b0047;
+  text-align: justify;
+}
+
+.modalDescription::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .modalLandscape {
+    display: none;
+  }
+  .modelPortrait {
+    display: flex;
+    width: 38%;
+  }
+  .contentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .modalAbout {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .modalTitle {
+    font-size: 3.5vw;
+  }
+  .modalDescription {
+    font-size: 22px;
+  }
+}
