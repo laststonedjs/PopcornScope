@@ -24,8 +24,14 @@
   letter-spacing: 0.5px;
 }
 
+.activeSearchContainer {
+  text-align: center;
+}
+
 .activeSearch {
-  margin-left: 29%;
+  display: inline-block;
+  width: 320px;
+  margin-right: 17%;
   margin-top: 2%;
   padding: 5px 0 7px 0;
 }

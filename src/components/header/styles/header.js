@@ -195,12 +195,16 @@ export const SearchInput = styled.input`
  border: 1px solid whitesmoke;
  transition: width 0.5s;
  height: 35px;
+ width: 100%;
  font-size: 15px;
  letter-spacing: 0.7px;
- margin-left: ${({ active }) => (active === true ? '10px' : '0')};
  padding: ${({ active }) => (active === true ? '0 15px' : '0')};
  opacity: ${({ active }) => (active === true ? '1' : '0')};
- width: ${({ active }) => (active === true ? '300px' : '0px')};
+
+ @media (min-width: 480px) {
+    height: 30px;
+    width: 10%;
+  }
 `;
 
 export const Bounce = styled.div`

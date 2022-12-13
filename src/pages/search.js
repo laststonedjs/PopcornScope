@@ -6,7 +6,7 @@ import { Header } from '../components';
 import SingleContent from '../components/single-content/singleContent';
 // containers
 import HeaderContainer from '../containers/header';
-// syles
+// styles
 import '../containers/browse/browse.css';
 import { SearchBox, SearchIcon, SearchInput } from "../components/search/search_style";
 // assets
@@ -53,19 +53,21 @@ export default function Search() {
           </Header.Group>
         </Header.Frame>
       </HeaderContainer>
-      <div className='activeSearch'>
-        <SearchBox>
-          <SearchIcon>
-            <img src={searchIcon} alt="Search" />
-          </SearchIcon>
-          <Header.Group>
-            <SearchInput
-              placeholder="Search Movie and TV Shows"
-              active={true}
-              onChange={onSearchChange}
-            />
-          </Header.Group>
-        </SearchBox>
+      <div className='activeSearchContainer'>
+        <div className='activeSearch'>
+          <SearchBox>
+            <SearchIcon>
+              <img src={searchIcon} alt="Search" />
+            </SearchIcon>
+            <Header.Group>
+              <SearchInput
+                placeholder="Search Movie and TV Shows"
+                active={true}
+                onChange={onSearchChange}
+              />
+            </Header.Group>
+          </SearchBox>
+        </div>
       </div>
       <div className='tabContainer'>
         <Tabs

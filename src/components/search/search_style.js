@@ -19,9 +19,6 @@ export const SearchBox = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 700px) {
-    display: none;
-  }
 `;
 
 export const SearchIcon = styled.button`
