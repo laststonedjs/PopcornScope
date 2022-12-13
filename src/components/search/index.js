@@ -3,7 +3,6 @@ import { Link as ReactRouterLink } from "react-router-dom";
 
 import {
   Background,
-  Link,
   Icon,
 } from "./search_style";
 

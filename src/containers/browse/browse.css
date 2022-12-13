@@ -30,14 +30,13 @@
 
 .activeSearch {
   display: inline-block;
-  width: 320px;
-  margin-right: 17%;
+  margin-right: 3%;
   margin-top: 2%;
   padding: 5px 0 7px 0;
 }
 
 .tabContainer {
   margin-top: 2.5%;
-  margin-left: 23%;
+  margin-left: 29%;
   padding: 8px 0 5px 0;
 }

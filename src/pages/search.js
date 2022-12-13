@@ -56,12 +56,12 @@ export default function Search() {
       <div className='activeSearchContainer'>
         <div className='activeSearch'>
           <SearchBox>
-            <SearchIcon>
-              <img src={searchIcon} alt="Search" />
-            </SearchIcon>
             <Header.Group>
+              <SearchIcon>
+                <img src={searchIcon} alt="Search" />
+              </SearchIcon>
               <SearchInput
-                placeholder="Search Movie and TV Shows"
+                placeholder="Search Movies and TV Shows"
                 active={true}
                 onChange={onSearchChange}
               />
@@ -79,8 +79,8 @@ export default function Search() {
             setType(newValue);
           }}
         >
-          <Tab style={{ width: '40%' }} label="Movie Results" />
-          <Tab style={{ width: '40%' }} label="TV Shows Results" />
+          <Tab style={{ width: '30%' }} label="Movie Results" />
+          <Tab style={{ width: '30%' }} label="TV Shows Results" />
         </Tabs>
       </div>
       <div className='top-rated-movies'>

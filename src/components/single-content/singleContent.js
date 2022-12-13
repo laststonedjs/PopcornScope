@@ -32,8 +32,11 @@ const SingleContent = ({
             alt={title}
           />
           <h1 className='title'>{title}</h1>
-          <span className='mediaType'>{media_type === "tv" ? "TV Series" : "Movie"}</span>
-          <span className='subTitle'><b>Release Date</b> {date}</span>
+          <span className='mediaType'>{media_type === "tv" ? "TV Shows" : "Movie"}</span>
+          <span className='subTitle'>
+            <b>Release Date</b>
+            {date}
+          </span>
         </div>
       </ContentModal>
     </div>

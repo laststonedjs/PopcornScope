@@ -16,10 +16,6 @@ export function BrowseContainer() {
           <Link className='link' to="/movies/shows">TV Shows</Link>
         </Header.Group>
         <Header.Group>
-          {/* <Header.Search
-            searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
-          /> */}
         </Header.Group>
       </Header.Frame>
       <Header src="suspiria_img" dontShowOnSmallScreen>
